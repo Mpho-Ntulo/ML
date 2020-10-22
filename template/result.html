@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title>Result</title>
+		
+		<link rel="stylesheet" type="text/css" href="../static/style.css" />
+</head>
+<body>
+	
+	<header>
+		<div class="container">
+			<div id="brandname">
+				Spam Detector App Using NLP
+			</div>
+			<h2>Spam Detector For SMS Messages</h2>
+		</div>
+	</header>
+	<p style="color:blue;font-size:20;text-align:center">Results for comment</b></p>
+	<div class="results">
+	
+	{% if prediction == 1 %}
+	<h2 style="color:red;">Spam(It is not Ham)</h2>
+    {% elif prediction == 0 %}
+	<h2 style="color:blue;">Not a Spam(It is Ham)</h2>
+	{% endif %}
+	
+	</div>
+	</body>
+		<footer class="footer">
+			<div class="footer">
+				<p class="copyright">Copyright 2020 @Mpho Ntulo</p>
+			</div>
+		</footer>
+</body>
+</html>
